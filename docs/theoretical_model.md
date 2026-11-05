@@ -261,9 +261,7 @@ Let $$|x|$$ and $$|x|'$$ denote the magnitudes of the coordinate vectors before 
 The original analysis assumes that the ratio between the position of a point on the deflection curve and the total current wire length remains unchanged:
 
 $$
-\frac{|x|}{L_0-v_ft_f}
-=
-\frac{|x|' }{L_0-v_ft_f-v_fdt}
+\frac{|x|}{L_0-v_ft_f} = \frac{|x|'}{L_0-v_ft_f-v_fdt}
 \tag{4-11}
 $$
 
@@ -276,9 +274,7 @@ $$
 the thesis obtains:
 
 $$
-\frac{d|x|}{dt}
-=
-\frac{|x|v_f}{L_0-v_ft_f}
+\frac{d|x|}{dt} = \frac{|x|v_f}{L_0-v_ft_f}
 \tag{4-12}
 $$
 
@@ -414,13 +410,7 @@ $$
 
 The duration of this stage is one quarter of the equivalent spring's oscillation period:
 
-$$
-t_w=\frac{T_w}{4}
-=
-\frac{\pi}{2}
-\sqrt{\frac{m_w}{k_w}}
-\tag{4-20}
-$$
+$$t_w=\frac{T_w}{4}=\frac{\pi}{2} \sqrt{\frac{m_w}{k_w}} \tag{4-20} $$
 
 This stage represents the rapid downward movement of the wire tip and the attached droplet during wire rebound.
 
@@ -490,14 +480,7 @@ $$
 
 or:
 
-$$
-\frac{1}{2}m_dv^2
-+
-m_dgh_d
-=
-\frac{1}{2}k_dh_d^2
-\tag{4-23}
-$$
+$$\frac{1}{2}m_dv^2 + m_dgh_d = \frac{1}{2}k_dh_d^2 \tag{4-23} $$
 
 where:
 
