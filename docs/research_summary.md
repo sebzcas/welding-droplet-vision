@@ -89,7 +89,7 @@ The comparison was presented in the original research as a theoretical-versus-ex
 
 This comparison is an important part of the research: the computer-vision algorithms provide experimental measurements, while the theoretical model provides a physical reference for interpreting those measurements.
 
-The historical comparison is illustrated in [the theoretical model comparison figure](figures/theoretical_model_comparison.png).
+The historical comparison is illustrated in [the theoretical model comparison figure](figures/fig-4-9-theoretical-experimental-comparison.png).
 
 ## 4. Original Research Findings
 

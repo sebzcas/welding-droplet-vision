@@ -37,19 +37,19 @@ The original physical model is illustrated in Figure 4-1.
 
 The principal parameters used in the model are listed below.
 
-| Symbol     |                    Value | Unit  | Description                                     |
-|------------|-------------------------:|-------|-------------------------------------------------|
-| \(v_f\)    |                     0.05 | m/s   | Wire feeding velocity                           |
-| \(t_f\)    |                     0.02 | s     | Wire clamping duration                          |
-| \(t_r\)    |                     0.03 | s     | Wire release duration                           |
-| \(L_0\)    |                     0.06 | m     | Length of the equivalent spring segment         |
-| \(L_r\)    |                     0.08 | m     | Length of the remaining wire segment            |
-| \(E\)      |        \(206\times10^9\) | Pa    | Young's modulus of the wire                     |
-| \(d_w\)    |                   0.0008 | m     | Wire diameter                                   |
-| \(A\)      |  \(5.0265\times10^{-7}\) | m²    | Wire cross-sectional area                       |
-| \(I\)      | \(2.0106\times10^{-14}\) | m⁴    | Second moment of area of the wire cross-section |
-| \(\rho_w\) |        \(7.9\times10^3\) | kg/m³ | Wire density                                    |
-| \(\rho_d\) |        \(6.8\times10^3\) | kg/m³ | Droplet density                                 |
+| Symbol    |                    Value | Unit  | Description                                     |
+|-----------|-------------------------:|-------|-------------------------------------------------|
+| $$v_f$$   |                     0.05 | m/s   | Wire feeding velocity                           |
+| $$t_f$$   |                     0.02 | s     | Wire clamping duration                          |
+| $$t_r$$   |                     0.03 | s     | Wire release duration                           |
+| $$L_0$$   |                     0.06 | m     | Length of the equivalent spring segment         |
+| $$L_r$$   |                     0.08 | m     | Length of the remaining wire segment            |
+| $$E$$     |        $$206\times10^9$$ | Pa    | Young's modulus of the wire                     |
+| $$d_w$$   |                   0.0008 | m     | Wire diameter                                   |
+| $$A$$     |  $$5.0265\times10^{-7}$$ | m²    | Wire cross-sectional area                       |
+| $$I$$     | $$2.0106\times10^{-14}$$ | m⁴    | Second moment of area of the wire cross-section |
+| $$rho_w$$ |        $$7.9\times10^3$$ | kg/m³ | Wire density                                    |
+| $$rho_d$$ |        $$6.8\times10^3$$ | kg/m³ | Droplet density                                 |
 
 Here, \(v_f\) denotes the wire feeding velocity, while \(v_m\) denotes the melting velocity of the wire tip. The coordinate \(x(t)\) represents the droplet displacement under the coordinate convention used in the original model.
 
