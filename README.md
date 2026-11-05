@@ -115,7 +115,7 @@ The traditional-vision outputs are preserved for comparison. The archived C++ im
 
 The original research compared its theoretical displacement model with a representative experimental droplet-bottom trajectory detected by the CNN-based method.
 
-![Theoretical and experimental displacement comparison](docs/figures/theoretical_model_comparison.png)
+![Theoretical and experimental displacement comparison](docs/figures/fig-4-9-theoretical-experimental-comparison.png)
 
 <sub>Historical comparison from the original research. The reported agreement of approximately 90% is not a metric from the current reconstructed PyTorch training run.</sub>
 
