@@ -1,0 +1,15 @@
+# Python version: 3.11
+#
+# Install PyTorch and torchvision separately if a specific CUDA version is required.
+# See https://pytorch.org/get-started/locally/
+
+numpy>=2.4,<3.0
+opencv-python>=5.0,<6.0
+pandas>=3.1,<4.0
+Pillow>=13.0,<14.0
+matplotlib>=3.11,<4.0
+tqdm>=4.70,<5.0
+
+# Deep learning
+torch>=2.11,<2.12
+torchvision>=0.26,<0.27

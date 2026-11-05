@@ -1,0 +1,207 @@
+(vision) welding-droplet-vision\deeplearning\training>python train_classification.py --npz ../welding-droplet-vision-data/dataset/classification_dataset.npz --epochs 20
+Device: cuda
+Train samples: 12000
+Test samples:  4000
+Epoch 001/20 | train_loss=1.554725 | test_loss=0.195815 | test_accuracy=94.5000% | time=0.9s
+Epoch 002/20 | train_loss=0.510006 | test_loss=0.157749 | test_accuracy=94.8750% | time=0.6s
+Epoch 003/20 | train_loss=0.349932 | test_loss=0.140815 | test_accuracy=95.2500% | time=0.6s
+Epoch 004/20 | train_loss=0.267365 | test_loss=0.108031 | test_accuracy=96.8000% | time=0.6s
+Epoch 005/20 | train_loss=0.223117 | test_loss=0.096008 | test_accuracy=97.0750% | time=0.7s
+Epoch 006/20 | train_loss=0.188713 | test_loss=0.091120 | test_accuracy=97.2250% | time=0.6s
+Epoch 007/20 | train_loss=0.175187 | test_loss=0.092076 | test_accuracy=96.9750% | time=0.7s
+Epoch 008/20 | train_loss=0.163613 | test_loss=0.098073 | test_accuracy=97.0250% | time=0.6s
+Epoch 009/20 | train_loss=0.151630 | test_loss=0.080243 | test_accuracy=97.8500% | time=0.7s
+Epoch 010/20 | train_loss=0.145782 | test_loss=0.066328 | test_accuracy=98.1500% | time=0.7s
+Epoch 011/20 | train_loss=0.131582 | test_loss=0.064025 | test_accuracy=98.3500% | time=0.6s
+Epoch 012/20 | train_loss=0.127104 | test_loss=0.067215 | test_accuracy=98.3750% | time=0.6s
+Epoch 013/20 | train_loss=0.121785 | test_loss=0.066020 | test_accuracy=98.5250% | time=0.6s
+Epoch 014/20 | train_loss=0.117896 | test_loss=0.060166 | test_accuracy=98.4250% | time=0.6s
+Epoch 015/20 | train_loss=0.111999 | test_loss=0.059563 | test_accuracy=98.5750% | time=0.7s
+Epoch 016/20 | train_loss=0.109160 | test_loss=0.060394 | test_accuracy=98.4000% | time=0.7s
+Epoch 017/20 | train_loss=0.105993 | test_loss=0.058873 | test_accuracy=98.5250% | time=0.7s
+Epoch 018/20 | train_loss=0.100439 | test_loss=0.050689 | test_accuracy=98.6500% | time=0.6s
+Epoch 019/20 | train_loss=0.097938 | test_loss=0.052516 | test_accuracy=98.4000% | time=0.6s
+Epoch 020/20 | train_loss=0.094193 | test_loss=0.049914 | test_accuracy=98.5000% | time=0.7s
+Model saved to: runs\classification\classification_cnn.pt
+History saved to: runs\classification\history.csv
+
+
+(vision) welding-droplet-vision\deeplearning\training>python train_regression.py --npz ../welding-droplet-vision-data/dataset/regression_datasets.npz --epochs 20 --target 0
+Device: cuda
+Target: 0 (upper_left)
+Train samples: 9200
+Test samples:  400
+Validation samples: 55
+Epoch 001/20 | train_mse=35.870068 | monitor_mse=5.722635 | monitor_mae=1.6953px | original_accuracy=94.7023% | within_2px=65.4545% | time=0.6s
+Epoch 002/20 | train_mse=3.647584 | monitor_mse=3.826151 | monitor_mae=1.2190px | original_accuracy=96.1906% | within_2px=87.2727% | time=0.3s
+Epoch 003/20 | train_mse=3.145752 | monitor_mse=3.831025 | monitor_mae=1.2122px | original_accuracy=96.2118% | within_2px=89.0909% | time=0.3s
+Epoch 004/20 | train_mse=2.957461 | monitor_mse=3.983844 | monitor_mae=1.2824px | original_accuracy=95.9925% | within_2px=87.2727% | time=0.3s
+Epoch 005/20 | train_mse=2.824168 | monitor_mse=4.008654 | monitor_mae=1.3309px | original_accuracy=95.8409% | within_2px=85.4545% | time=0.3s
+Epoch 006/20 | train_mse=2.702394 | monitor_mse=3.916584 | monitor_mae=1.3593px | original_accuracy=95.7523% | within_2px=87.2727% | time=0.3s
+Epoch 007/20 | train_mse=2.582588 | monitor_mse=3.851410 | monitor_mae=1.3832px | original_accuracy=95.6774% | within_2px=89.0909% | time=0.3s
+Epoch 008/20 | train_mse=2.471615 | monitor_mse=3.747495 | monitor_mae=1.3775px | original_accuracy=95.6954% | within_2px=90.9091% | time=0.3s
+Epoch 009/20 | train_mse=2.367282 | monitor_mse=3.614544 | monitor_mae=1.3582px | original_accuracy=95.7556% | within_2px=90.9091% | time=0.3s
+Epoch 010/20 | train_mse=2.263173 | monitor_mse=3.440742 | monitor_mae=1.3321px | original_accuracy=95.8373% | within_2px=89.0909% | time=0.3s
+Epoch 011/20 | train_mse=2.160340 | monitor_mse=3.254885 | monitor_mae=1.3049px | original_accuracy=95.9221% | within_2px=90.9091% | time=0.3s
+Epoch 012/20 | train_mse=2.074563 | monitor_mse=3.071702 | monitor_mae=1.2728px | original_accuracy=96.0226% | within_2px=89.0909% | time=0.3s
+Epoch 013/20 | train_mse=2.002342 | monitor_mse=2.934608 | monitor_mae=1.2476px | original_accuracy=96.1013% | within_2px=90.9091% | time=0.3s
+Epoch 014/20 | train_mse=1.934129 | monitor_mse=2.822056 | monitor_mae=1.2229px | original_accuracy=96.1783% | within_2px=90.9091% | time=0.3s
+Epoch 015/20 | train_mse=1.873839 | monitor_mse=2.707432 | monitor_mae=1.1931px | original_accuracy=96.2714% | within_2px=90.9091% | time=0.3s
+Epoch 016/20 | train_mse=1.821704 | monitor_mse=2.628698 | monitor_mae=1.1749px | original_accuracy=96.3285% | within_2px=92.7273% | time=0.3s
+Epoch 017/20 | train_mse=1.769171 | monitor_mse=2.564719 | monitor_mae=1.1603px | original_accuracy=96.3740% | within_2px=92.7273% | time=0.3s
+Epoch 018/20 | train_mse=1.718545 | monitor_mse=2.537799 | monitor_mae=1.1550px | original_accuracy=96.3906% | within_2px=92.7273% | time=0.3s
+Epoch 019/20 | train_mse=1.674645 | monitor_mse=2.512743 | monitor_mae=1.1544px | original_accuracy=96.3925% | within_2px=92.7273% | time=0.3s
+Epoch 020/20 | train_mse=1.631880 | monitor_mse=2.498007 | monitor_mae=1.1521px | original_accuracy=96.3998% | within_2px=92.7273% | time=0.3s
+
+Final test metrics:
+  MSE (per coordinate):       2.230845
+  MAE (per coordinate):       1.0599 pixels
+  Original accuracy metric:   96.6879%
+  Within-2px sample accuracy: 94.0000%
+
+Model saved to: runs\regression\target_0_upper_left\regression_cnn.pt
+History saved to: runs\regression\target_0_upper_left\history.csv
+
+(vision) welding-droplet-vision\deeplearning\training>python train_regression.py --npz ../welding-droplet-vision-data/dataset/regression_datasets.npz --epochs 20 --target 1
+Device: cuda
+Target: 1 (upper_right)
+Train samples: 9000
+Test samples:  100
+Validation samples: 80
+Epoch 001/20 | train_mse=58.211027 | monitor_mse=23.759071 | monitor_mae=3.8077px | original_accuracy=88.1008% | within_2px=23.7500% | time=0.6s
+Epoch 002/20 | train_mse=6.742919 | monitor_mse=4.174464 | monitor_mae=1.3895px | original_accuracy=95.6579% | within_2px=80.0000% | time=0.3s
+Epoch 003/20 | train_mse=3.853661 | monitor_mse=3.491467 | monitor_mae=1.2249px | original_accuracy=96.1721% | within_2px=86.2500% | time=0.3s
+Epoch 004/20 | train_mse=3.466765 | monitor_mse=3.519418 | monitor_mae=1.2255px | original_accuracy=96.1704% | within_2px=83.7500% | time=0.3s
+Epoch 005/20 | train_mse=3.262643 | monitor_mse=3.531895 | monitor_mae=1.2484px | original_accuracy=96.0988% | within_2px=85.0000% | time=0.3s
+Epoch 006/20 | train_mse=3.119088 | monitor_mse=3.329422 | monitor_mae=1.2275px | original_accuracy=96.1642% | within_2px=87.5000% | time=0.3s
+Epoch 007/20 | train_mse=2.986388 | monitor_mse=3.115676 | monitor_mae=1.1933px | original_accuracy=96.2710% | within_2px=87.5000% | time=0.3s
+Epoch 008/20 | train_mse=2.863887 | monitor_mse=2.972121 | monitor_mae=1.1866px | original_accuracy=96.2919% | within_2px=87.5000% | time=0.3s
+Epoch 009/20 | train_mse=2.736271 | monitor_mse=2.737176 | monitor_mae=1.1478px | original_accuracy=96.4131% | within_2px=88.7500% | time=0.3s
+Epoch 010/20 | train_mse=2.616924 | monitor_mse=2.582169 | monitor_mae=1.1294px | original_accuracy=96.4706% | within_2px=91.2500% | time=0.3s
+Epoch 011/20 | train_mse=2.511852 | monitor_mse=2.442308 | monitor_mae=1.1139px | original_accuracy=96.5192% | within_2px=92.5000% | time=0.3s
+Epoch 012/20 | train_mse=2.415412 | monitor_mse=2.253545 | monitor_mae=1.0662px | original_accuracy=96.6681% | within_2px=93.7500% | time=0.3s
+Epoch 013/20 | train_mse=2.325820 | monitor_mse=2.070186 | monitor_mae=1.0229px | original_accuracy=96.8035% | within_2px=93.7500% | time=0.3s
+Epoch 014/20 | train_mse=2.245030 | monitor_mse=1.961065 | monitor_mae=1.0115px | original_accuracy=96.8392% | within_2px=93.7500% | time=0.3s
+Epoch 015/20 | train_mse=2.172002 | monitor_mse=1.840160 | monitor_mae=0.9952px | original_accuracy=96.8899% | within_2px=95.0000% | time=0.3s
+Epoch 016/20 | train_mse=2.101629 | monitor_mse=1.747343 | monitor_mae=0.9811px | original_accuracy=96.9341% | within_2px=95.0000% | time=0.3s
+Epoch 017/20 | train_mse=2.032869 | monitor_mse=1.611654 | monitor_mae=0.9429px | original_accuracy=97.0535% | within_2px=95.0000% | time=0.3s
+Epoch 018/20 | train_mse=1.961344 | monitor_mse=1.510437 | monitor_mae=0.9162px | original_accuracy=97.1370% | within_2px=95.0000% | time=0.3s
+Epoch 019/20 | train_mse=1.900379 | monitor_mse=1.398754 | monitor_mae=0.8799px | original_accuracy=97.2503% | within_2px=95.0000% | time=0.3s
+Epoch 020/20 | train_mse=1.821082 | monitor_mse=1.292500 | monitor_mae=0.8382px | original_accuracy=97.3807% | within_2px=96.2500% | time=0.3s
+
+Final test metrics:
+  MSE (per coordinate):       1.487209
+  MAE (per coordinate):       0.8605 pixels
+  Original accuracy metric:   97.3109%
+  Within-2px sample accuracy: 98.0000%
+
+Model saved to: runs\regression\target_1_upper_right\regression_cnn.pt
+History saved to: runs\regression\target_1_upper_right\history.csv
+
+(vision) welding-droplet-vision\deeplearning\training>python train_regression.py --npz ../welding-droplet-vision-data/dataset/regression_datasets.npz --epochs 20 --target 2
+Device: cuda
+Target: 2 (bottom)
+Train samples: 7680
+Test samples:  240
+Validation samples: 71
+Epoch 001/20 | train_mse=54.683816 | monitor_mse=26.383158 | monitor_mae=4.1069px | original_accuracy=87.1659% | within_2px=22.5352% | time=0.6s
+Epoch 002/20 | train_mse=16.197239 | monitor_mse=12.565259 | monitor_mae=2.6865px | original_accuracy=91.6046% | within_2px=40.8451% | time=0.3s
+Epoch 003/20 | train_mse=11.037780 | monitor_mse=7.147638 | monitor_mae=1.9907px | original_accuracy=93.7792% | within_2px=59.1549% | time=0.3s
+Epoch 004/20 | train_mse=6.958217 | monitor_mse=5.408820 | monitor_mae=1.7142px | original_accuracy=94.6431% | within_2px=76.0563% | time=0.3s
+Epoch 005/20 | train_mse=5.893374 | monitor_mse=4.985470 | monitor_mae=1.6684px | original_accuracy=94.7861% | within_2px=74.6479% | time=0.3s
+Epoch 006/20 | train_mse=5.262831 | monitor_mse=4.460215 | monitor_mae=1.5814px | original_accuracy=95.0582% | within_2px=80.2817% | time=0.3s
+Epoch 007/20 | train_mse=4.623371 | monitor_mse=4.072601 | monitor_mae=1.5071px | original_accuracy=95.2902% | within_2px=85.9155% | time=0.3s
+Epoch 008/20 | train_mse=4.056604 | monitor_mse=3.657279 | monitor_mae=1.3975px | original_accuracy=95.6330% | within_2px=88.7324% | time=0.3s
+Epoch 009/20 | train_mse=3.637607 | monitor_mse=3.443857 | monitor_mae=1.3496px | original_accuracy=95.7824% | within_2px=88.7324% | time=0.3s
+Epoch 010/20 | train_mse=3.304608 | monitor_mse=3.299177 | monitor_mae=1.3020px | original_accuracy=95.9313% | within_2px=90.1408% | time=0.3s
+Epoch 011/20 | train_mse=3.038344 | monitor_mse=3.141435 | monitor_mae=1.2492px | original_accuracy=96.0961% | within_2px=88.7324% | time=0.3s
+Epoch 012/20 | train_mse=2.845854 | monitor_mse=3.034359 | monitor_mae=1.2122px | original_accuracy=96.2119% | within_2px=88.7324% | time=0.3s
+Epoch 013/20 | train_mse=2.704428 | monitor_mse=2.963323 | monitor_mae=1.1804px | original_accuracy=96.3111% | within_2px=90.1408% | time=0.3s
+Epoch 014/20 | train_mse=2.577909 | monitor_mse=2.894978 | monitor_mae=1.1544px | original_accuracy=96.3924% | within_2px=91.5493% | time=0.3s
+Epoch 015/20 | train_mse=2.463507 | monitor_mse=2.800167 | monitor_mae=1.1352px | original_accuracy=96.4527% | within_2px=91.5493% | time=0.3s
+Epoch 016/20 | train_mse=2.373820 | monitor_mse=2.687314 | monitor_mae=1.1045px | original_accuracy=96.5485% | within_2px=94.3662% | time=0.3s
+Epoch 017/20 | train_mse=2.283288 | monitor_mse=2.634442 | monitor_mae=1.0672px | original_accuracy=96.6650% | within_2px=92.9577% | time=0.3s
+Epoch 018/20 | train_mse=2.202422 | monitor_mse=2.544803 | monitor_mae=1.0451px | original_accuracy=96.7342% | within_2px=94.3662% | time=0.3s
+Epoch 019/20 | train_mse=2.107570 | monitor_mse=2.483544 | monitor_mae=1.0260px | original_accuracy=96.7938% | within_2px=92.9577% | time=0.3s
+Epoch 020/20 | train_mse=2.023293 | monitor_mse=2.409189 | monitor_mae=1.0116px | original_accuracy=96.8388% | within_2px=94.3662% | time=0.3s
+
+Final test metrics:
+  MSE (per coordinate):       2.183379
+  MAE (per coordinate):       1.0113 pixels
+  Original accuracy metric:   96.8397%
+  Within-2px sample accuracy: 93.7500%
+
+Model saved to: runs\regression\target_2_bottom\regression_cnn.pt
+History saved to: runs\regression\target_2_bottom\history.csv
+
+(vision) welding-droplet-vision\deeplearning\training>python train_regression.py --npz ../welding-droplet-vision-data/dataset/regression_datasets.npz --epochs 20 --target 3
+Device: cuda
+Target: 3 (left)
+Train samples: 10560
+Test samples:  400
+Validation samples: 79
+Epoch 001/20 | train_mse=38.957691 | monitor_mse=8.776814 | monitor_mae=2.0999px | original_accuracy=93.4380% | within_2px=58.2278% | time=0.6s
+Epoch 002/20 | train_mse=8.012681 | monitor_mse=6.461070 | monitor_mae=1.8031px | original_accuracy=94.3653% | within_2px=72.1519% | time=0.4s
+Epoch 003/20 | train_mse=6.544270 | monitor_mse=6.195494 | monitor_mae=1.8265px | original_accuracy=94.2923% | within_2px=63.2911% | time=0.4s
+Epoch 004/20 | train_mse=5.861081 | monitor_mse=6.020206 | monitor_mae=1.8163px | original_accuracy=94.3241% | within_2px=64.5570% | time=0.4s
+Epoch 005/20 | train_mse=5.303221 | monitor_mse=5.549683 | monitor_mae=1.7363px | original_accuracy=94.5742% | within_2px=67.0886% | time=0.4s
+Epoch 006/20 | train_mse=4.794740 | monitor_mse=4.728022 | monitor_mae=1.5728px | original_accuracy=95.0850% | within_2px=72.1519% | time=0.4s
+Epoch 007/20 | train_mse=4.208591 | monitor_mse=3.484055 | monitor_mae=1.2733px | original_accuracy=96.0209% | within_2px=84.8101% | time=0.4s
+Epoch 008/20 | train_mse=3.659781 | monitor_mse=2.759120 | monitor_mae=1.1525px | original_accuracy=96.3985% | within_2px=89.8734% | time=0.4s
+Epoch 009/20 | train_mse=3.228204 | monitor_mse=2.450828 | monitor_mae=1.1343px | original_accuracy=96.4552% | within_2px=94.9367% | time=0.4s
+Epoch 010/20 | train_mse=2.906213 | monitor_mse=2.276861 | monitor_mae=1.1112px | original_accuracy=96.5274% | within_2px=93.6709% | time=0.4s
+Epoch 011/20 | train_mse=2.670189 | monitor_mse=2.145965 | monitor_mae=1.0887px | original_accuracy=96.5977% | within_2px=94.9367% | time=0.4s
+Epoch 012/20 | train_mse=2.493514 | monitor_mse=2.021558 | monitor_mae=1.0598px | original_accuracy=96.6880% | within_2px=94.9367% | time=0.4s
+Epoch 013/20 | train_mse=2.336521 | monitor_mse=1.923684 | monitor_mae=1.0346px | original_accuracy=96.7669% | within_2px=96.2025% | time=0.4s
+Epoch 014/20 | train_mse=2.208872 | monitor_mse=1.911057 | monitor_mae=1.0229px | original_accuracy=96.8034% | within_2px=93.6709% | time=0.4s
+Epoch 015/20 | train_mse=2.106810 | monitor_mse=1.947343 | monitor_mae=1.0277px | original_accuracy=96.7885% | within_2px=93.6709% | time=0.4s
+Epoch 016/20 | train_mse=2.020155 | monitor_mse=2.031062 | monitor_mae=1.0479px | original_accuracy=96.7253% | within_2px=91.1392% | time=0.4s
+Epoch 017/20 | train_mse=1.947540 | monitor_mse=1.855100 | monitor_mae=0.9812px | original_accuracy=96.9336% | within_2px=93.6709% | time=0.4s
+Epoch 018/20 | train_mse=1.851829 | monitor_mse=1.549054 | monitor_mae=0.8893px | original_accuracy=97.2210% | within_2px=94.9367% | time=0.4s
+Epoch 019/20 | train_mse=1.763180 | monitor_mse=1.431310 | monitor_mae=0.8471px | original_accuracy=97.3528% | within_2px=96.2025% | time=0.4s
+Epoch 020/20 | train_mse=1.688736 | monitor_mse=1.356356 | monitor_mae=0.8228px | original_accuracy=97.4288% | within_2px=96.2025% | time=0.4s
+
+Final test metrics:
+  MSE (per coordinate):       1.826351
+  MAE (per coordinate):       0.8533 pixels
+  Original accuracy metric:   97.3335%
+  Within-2px sample accuracy: 95.2500%
+
+Model saved to: runs\regression\target_3_left\regression_cnn.pt
+History saved to: runs\regression\target_3_left\history.csv
+
+(vision) welding-droplet-vision\deeplearning\training>python train_regression.py --npz ../welding-droplet-vision-data/dataset/regression_datasets.npz --epochs 20 --target 4
+Device: cuda
+Target: 4 (right)
+Train samples: 10880
+Test samples:  80
+Validation samples: 77
+Epoch 001/20 | train_mse=66.914208 | monitor_mse=10.599536 | monitor_mae=2.3698px | original_accuracy=92.5945% | within_2px=49.3506% | time=0.7s
+Epoch 002/20 | train_mse=10.101078 | monitor_mse=8.384481 | monitor_mae=2.1960px | original_accuracy=93.1374% | within_2px=57.1429% | time=0.4s
+Epoch 003/20 | train_mse=9.035509 | monitor_mse=8.391113 | monitor_mae=2.2591px | original_accuracy=92.9403% | within_2px=51.9481% | time=0.4s
+Epoch 004/20 | train_mse=8.242946 | monitor_mse=7.581464 | monitor_mae=2.1148px | original_accuracy=93.3912% | within_2px=54.5455% | time=0.4s
+Epoch 005/20 | train_mse=7.822855 | monitor_mse=6.650987 | monitor_mae=1.9212px | original_accuracy=93.9963% | within_2px=62.3377% | time=0.4s
+Epoch 006/20 | train_mse=7.358039 | monitor_mse=6.402907 | monitor_mae=1.8683px | original_accuracy=94.1617% | within_2px=64.9351% | time=0.4s
+Epoch 007/20 | train_mse=6.933148 | monitor_mse=6.255600 | monitor_mae=1.8544px | original_accuracy=94.2050% | within_2px=66.2338% | time=0.4s
+Epoch 008/20 | train_mse=6.462379 | monitor_mse=5.813628 | monitor_mae=1.8015px | original_accuracy=94.3703% | within_2px=68.8312% | time=0.4s
+Epoch 009/20 | train_mse=5.998740 | monitor_mse=5.249477 | monitor_mae=1.7151px | original_accuracy=94.6403% | within_2px=70.1299% | time=0.4s
+Epoch 010/20 | train_mse=5.532771 | monitor_mse=4.683562 | monitor_mae=1.6077px | original_accuracy=94.9758% | within_2px=72.7273% | time=0.4s
+Epoch 011/20 | train_mse=5.053823 | monitor_mse=4.228884 | monitor_mae=1.5268px | original_accuracy=95.2288% | within_2px=74.0260% | time=0.4s
+Epoch 012/20 | train_mse=4.636792 | monitor_mse=3.785530 | monitor_mae=1.4537px | original_accuracy=95.4572% | within_2px=79.2208% | time=0.4s
+Epoch 013/20 | train_mse=4.292136 | monitor_mse=3.293778 | monitor_mae=1.3536px | original_accuracy=95.7701% | within_2px=85.7143% | time=0.4s
+Epoch 014/20 | train_mse=3.977667 | monitor_mse=2.890662 | monitor_mae=1.2667px | original_accuracy=96.0415% | within_2px=87.0130% | time=0.4s
+Epoch 015/20 | train_mse=3.679274 | monitor_mse=2.626935 | monitor_mae=1.1991px | original_accuracy=96.2529% | within_2px=88.3117% | time=0.4s
+Epoch 016/20 | train_mse=3.414193 | monitor_mse=2.508048 | monitor_mae=1.1787px | original_accuracy=96.3166% | within_2px=88.3117% | time=0.4s
+Epoch 017/20 | train_mse=3.189640 | monitor_mse=2.306427 | monitor_mae=1.1271px | original_accuracy=96.4779% | within_2px=90.9091% | time=0.4s
+Epoch 018/20 | train_mse=2.984263 | monitor_mse=2.143180 | monitor_mae=1.0807px | original_accuracy=96.6227% | within_2px=90.9091% | time=0.4s
+Epoch 019/20 | train_mse=2.810313 | monitor_mse=2.006855 | monitor_mae=1.0390px | original_accuracy=96.7530% | within_2px=90.9091% | time=0.4s
+Epoch 020/20 | train_mse=2.648955 | monitor_mse=1.874735 | monitor_mae=1.0101px | original_accuracy=96.8433% | within_2px=90.9091% | time=0.4s
+
+Final test metrics:
+  MSE (per coordinate):       1.141865
+  MAE (per coordinate):       0.7962 pixels
+  Original accuracy metric:   97.5119%
+  Within-2px sample accuracy: 96.2500%
+
+Model saved to: runs\regression\target_4_right\regression_cnn.pt
+History saved to: runs\regression\target_4_right\history.csv
