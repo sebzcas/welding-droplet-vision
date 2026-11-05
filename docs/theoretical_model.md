@@ -51,7 +51,7 @@ The principal parameters used in the model are listed below.
 | $$rho_w$$ |        $$7.9\times10^3$$ | kg/m³ | Wire density                                    |
 | $$rho_d$$ |        $$6.8\times10^3$$ | kg/m³ | Droplet density                                 |
 
-Here, \(v_f\) denotes the wire feeding velocity, while \(v_m\) denotes the melting velocity of the wire tip. The coordinate \(x(t)\) represents the droplet displacement under the coordinate convention used in the original model.
+Here, $$v_f$$ denotes the wire feeding velocity, while $$v_m$$ denotes the melting velocity of the wire tip. The coordinate $$x(t)$$ represents the droplet displacement under the coordinate convention used in the original model.
 
 ## 2. Four Stages of Droplet Transfer
 
@@ -59,164 +59,164 @@ Here, \(v_f\) denotes the wire feeding velocity, while \(v_m\) denotes the melti
 
 During the dwelling stage, the wire is continuously fed towards the arc and melts at its tip. To maintain the droplet at an approximately fixed position, the wire feeding velocity must equal the melting velocity:
 
-\[
+$$
 v_m=v_f
 \tag{4-1}
-\]
+$$
 
 Using the experimental parameters:
 
-\[
+$$
 v_m=v_f=0.05\ \mathrm{m/s}
-\]
+$$
 
-The droplet therefore remains at an approximately constant displacement, denoted by \(x_0\).
+The droplet therefore remains at an approximately constant displacement, denoted by $$x_0$$.
 
-Let \(t_1\) be the duration of this stage. In the experiment:
+Let $$t_1$$ be the duration of this stage. In the experiment:
 
-\[
+$$
 t_1=0.02\ \mathrm{s}
-\]
+$$
 
 The displacement function is:
 
-\[
+$$
 x(t)=x_0
 \tag{4-2}
-\]
+$$
 
 where:
 
-\[
+$$
 t_0<t\leq t_0+t_1
-\]
+$$
 
-Here, \(t_0\) is an assumed initial time used to align the theoretical model with an experimental displacement curve.
+Here, $$t_0$$ is an assumed initial time used to align the theoretical model with an experimental displacement curve.
 
 ### 2.2 Stage II — Wire energy storage
 
 After the dwelling stage, the piezoelectric actuator clamps the wire. The wire tip is stopped, but the wire behind the clamping point continues to move forward at the feeding velocity.
 
-The wire consequently bends and accumulates elastic potential energy. Meanwhile, because the wire tip is no longer advancing, the melting process causes the droplet to move upwards at the melting velocity \(v_m\).
+The wire consequently bends and accumulates elastic potential energy. Meanwhile, because the wire tip is no longer advancing, the melting process causes the droplet to move upwards at the melting velocity $$v_m$$.
 
-Let \(t_2\) denote the duration of this stage. It corresponds to the clamping duration:
+Let $$t_2$$ denote the duration of this stage. It corresponds to the clamping duration:
 
-\[
+$$
 t_2=t_f=0.02\ \mathrm{s}
-\]
+$$
 
 The droplet displacement is therefore:
 
-\[
+$$
 x(t)=x_0-v_m(t-t_0-t_1)
 \tag{4-3}
-\]
+$$
 
 for:
 
-\[
+$$
 t_0+t_1<t\leq t_0+t_1+t_2
-\]
+$$
 
-Since \(v_m=0.05\ \mathrm{m/s}\), the droplet moves upwards at a constant velocity during this stage under the model's coordinate convention.
+Since $$v_m=0.05\ \mathrm{m/s}$$, the droplet moves upwards at a constant velocity during this stage under the model's coordinate convention.
 
 #### 2.2.1 Wire deflection and endpoint displacement
 
 Besides the droplet displacement, the wire's bending deformation is another important characteristic of the energy-storage stage.
 
-The bent wire is approximated as an elastically deformed compression member. As illustrated in Figure 4-2, an external force \(F\) is applied at the moving endpoint \(A\), causing it to move in the negative \(x\)-direction at a constant velocity \(v_f\).
+The bent wire is approximated as an elastically deformed compression member. As illustrated in Figure 4-2, an external force $$F$$ is applied at the moving endpoint $$A$$, causing it to move in the negative $$x$$-direction at a constant velocity $$v_f$$.
 
 ![Compression-member model for wire deflection](figures/fig-4-2-compression-member-model.png)
 
-After a clamping duration \(t_f\), the endpoint has moved from \(A\) to \(B\). Denote the total endpoint displacement by \(\lambda\):
+After a clamping duration $$t_f$$, the endpoint has moved from $$A$$ to $$B$$. Denote the total endpoint displacement by $$\lambda$$:
 
-\[
+$$
 \lambda=v_f t_f
 \tag{4-4}
-\]
+$$
 
 For the experimental parameters:
 
-\[
+$$
 \lambda=0.05\times0.02=0.001\ \mathrm{m}
-\]
+$$
 
-Since \(\lambda\) is small compared with the wire segment length \(L_0\), the original analysis assumes that the applied force \(F\) can be treated as approximately constant.
+Since $$\lambda$$ is small compared with the wire segment length $$L_0$$, the original analysis assumes that the applied force $$F$$ can be treated as approximately constant.
 
 #### 2.2.2 Deflection curve of the wire
 
 Considering axial deformation of the compression member, the original thesis adopts the following deflection function:
 
-\[
+$$
 w(x)=A\sin(kx)
 \tag{4-5}
-\]
+$$
 
 where:
 
-\[
+$$
 k=\sqrt{\frac{F}{EI}}
-\]
+$$
 
 Here:
 
-- \(w(x)\) is the lateral deflection of the wire;
-- \(A\) is the deflection amplitude;
-- \(F\) is the applied compressive force;
-- \(E\) is Young's modulus;
-- \(I\) is the second moment of area.
+- $$w(x)$$ is the lateral deflection of the wire;
+- $$A$$ is the deflection amplitude;
+- $$F$$ is the applied compressive force;
+- $$E$$ is Young's modulus;
+- $$I$$ is the second moment of area.
 
 Differentiating Equation (4-5) gives:
 
-\[
+$$
 \frac{dw}{dx}=Ak\cos(kx)
 \tag{4-6}
-\]
+$$
 
-To determine the amplitude \(A\), consider a small element of the deflected wire, as illustrated in Figure 4-3.
+To determine the amplitude $$A$$, consider a small element of the deflected wire, as illustrated in Figure 4-3.
 
 ![Infinitesimal element along the deflected wire](figures/fig-4-3-wire-deflection-element.png)
 
-Let \(ds\) denote the length of an infinitesimal element along the deflection curve, and \(dx\) its projection onto the \(x\)-axis. The total endpoint displacement is related to the difference between the curved length and its horizontal projection:
+Let $$ds$$ denote the length of an infinitesimal element along the deflection curve, and $$dx$$ its projection onto the $$x$$-axis. The total endpoint displacement is related to the difference between the curved length and its horizontal projection:
 
-\[
+$$
 \lambda=\int_0^{L_0-\lambda}(ds-dx)
 \tag{4-7}
-\]
+$$
 
 From the geometry of the infinitesimal element:
 
-\[
+$$
 ds=\sqrt{dx^2+dw^2}
-\]
+$$
 
 Therefore:
 
-\[
+$$
 ds=
 \sqrt{1+\left(\frac{dw}{dx}\right)^2}\,dx
-\]
+$$
 
 Using the small-slope approximation:
 
-\[
+$$
 \sqrt{1+\epsilon}\approx1+\frac{\epsilon}{2}
-\]
+$$
 
 gives:
 
-\[
+$$
 ds\approx
 \left[
 1+\frac{1}{2}
 \left(\frac{dw}{dx}\right)^2
 \right]dx
 \tag{4-8}
-\]
+$$
 
 Substituting Equation (4-6) into Equation (4-8), and then substituting the resulting expression into Equation (4-7), yields the following relation:
 
-\[
+$$
 \lambda=
 \frac{A^2}{8}
 \left[
@@ -226,11 +226,11 @@ Substituting Equation (4-6) into Equation (4-8), and then substituting the resul
 \right)
 \right]
 \tag{4-9}
-\]
+$$
 
-Since \(\lambda=v_ft_f\), solving for the amplitude gives:
+Since $$\lambda=v_ft_f$$, solving for the amplitude gives:
 
-\[
+$$
 A=
 2\sqrt{2}
 \sqrt{
@@ -242,9 +242,9 @@ A=
 }
 }
 \tag{4-10}
-\]
+$$
 
-This provides the deflection amplitude in terms of the wire feeding velocity, clamping duration, wire length and the parameter \(k\).
+This provides the deflection amplitude in terms of the wire feeding velocity, clamping duration, wire length and the parameter $$k$$.
 
 #### 2.2.3 Time-dependent deflection profile
 
@@ -256,58 +256,58 @@ Figure 4-4 illustrates the movement of the endpoint over an infinitesimal time i
 
 ![Evolution of the wire deflection coordinate system](figures/fig-4-4-deflection-coordinate-evolution.png)
 
-Let \(|x|\) and \(|x|'\) denote the magnitudes of the coordinate vectors before and after the endpoint moves a distance \(v_fdt\), respectively.
+Let $$|x|$$ and $$|x|'$$ denote the magnitudes of the coordinate vectors before and after the endpoint moves a distance $$v_fdt$$, respectively.
 
 The original analysis assumes that the ratio between the position of a point on the deflection curve and the total current wire length remains unchanged:
 
-\[
+$$
 \frac{|x|}{L_0-v_ft_f}
 =
 \frac{|x|' }{L_0-v_ft_f-v_fdt}
 \tag{4-11}
-\]
+$$
 
 Defining:
 
-\[
+$$
 d|x|=|x|-|x|'
-\]
+$$
 
 the thesis obtains:
 
-\[
+$$
 \frac{d|x|}{dt}
 =
 \frac{|x|v_f}{L_0-v_ft_f}
 \tag{4-12}
-\]
+$$
 
 The printed form of Equation (4-13) is:
 
-\[
+$$
 |x|=
 \frac{Cv_f}{L_0-v_ft_f}
 \tag{4-13}
-\]
+$$
 
-where \(C\) is a constant.
+where $$C$$ is a constant.
 
 Substituting this expression into Equation (4-5), the original thesis writes the deflection function in the form:
 
-\[
+$$
 w=A\sin(|x|kx)
-\]
+$$
 
-Using the boundary condition that \(w=0\) when \(t=0\) and \(x=L_0\), the thesis obtains:
+Using the boundary condition that $$w=0$$ when $$t=0$$ and $$x=L_0$$, the thesis obtains:
 
-\[
+$$
 C=\frac{\pi}{kv_f}
 \tag{4-14}
-\]
+$$
 
 Finally, substituting Equations (4-10) and (4-14) into the deflection function gives the time-dependent wire deflection expression:
 
-\[
+$$
 \boxed{
 w(x)=
 2\sqrt{2}
@@ -324,17 +324,17 @@ w(x)=
 \right)
 }
 \tag{4-15}
-\]
+$$
 
 where:
 
-\[
+$$
 k=\sqrt{\frac{F}{EI}}
-\]
+$$
 
 This expression describes the wire deflection profile under the assumptions used in the original analysis.
 
-**Mathematical consistency note:** Equation (4-12), as printed, is a differential equation whose direct integration with constant \(L_0-v_ft_f\) would produce an exponential dependence on time. The printed Equation (4-13) does not show that dependence. In addition, the intermediate expression \(w=A\sin(|x|kx)\) and the final Equation (4-15) do not make the same coordinate dependence explicit. The original equations are retained here as printed; this intermediate derivation should be checked against the original typeset source or the cited compression-member reference before being used as an independently verified derivation.
+**Mathematical consistency note:** Equation (4-12), as printed, is a differential equation whose direct integration with constant $$L_0-v_ft_f$$ would produce an exponential dependence on time. The printed Equation (4-13) does not show that dependence. In addition, the intermediate expression $$w=A\sin(|x|kx)$$ and the final Equation (4-15) do not make the same coordinate dependence explicit. The original equations are retained here as printed; this intermediate derivation should be checked against the original typeset source or the cited compression-member reference before being used as an independently verified derivation.
 
 ### 2.3 Stage III — Wire rebound
 
@@ -348,49 +348,49 @@ The equivalent mechanical model is shown in Figure 4-5.
 
 The wire is divided into two segments:
 
-- \(L_0\): the segment represented by the equivalent spring;
-- \(L_r\): the remaining wire segment, represented by an additional moving mass.
+- $$L_0$$: the segment represented by the equivalent spring;
+- $$L_r$$: the remaining wire segment, represented by an additional moving mass.
 
 The mass of a wire segment is:
 
-\[
+$$
 m=\rho AL
 \tag{4-16}
-\]
+$$
 
-where \(\rho\) is the wire density, \(A\) is the cross-sectional area and \(L\) is the segment length.
+where $$\rho$$ is the wire density, $$A$$ is the cross-sectional area and $$L$$ is the segment length.
 
 Using the experimental parameters, the original thesis obtains:
 
-\[
+$$
 m_0=2.3826\times10^{-4}\ \mathrm{kg}
-\]
+$$
 
-\[
+$$
 m_r=3.1768\times10^{-4}\ \mathrm{kg}
-\]
+$$
 
 The equivalent mass of a uniformly distributed spring is one-third of its total mass. Therefore, the equivalent oscillating mass is:
 
-\[
+$$
 m_w=\frac{1}{3}m_0+m_r
 \tag{4-17}
-\]
+$$
 
 The equivalent spring stiffness is:
 
-\[
+$$
 k_w=\frac{3EI}{L_0^3}
 \tag{4-18}
-\]
+$$
 
-During the energy-storage stage, the wire endpoint moves by \(\lambda\). When the wire rebounds to its original straight configuration, the endpoint approximately returns through the same displacement. Thus, the rebound amplitude is taken as \(\lambda\).
+During the energy-storage stage, the wire endpoint moves by $$\lambda$$. When the wire rebounds to its original straight configuration, the endpoint approximately returns through the same displacement. Thus, the rebound amplitude is taken as $$\lambda$$.
 
 The wire is modeled as a simple harmonic oscillator starting from zero velocity and accelerating towards its maximum velocity.
 
 The resulting droplet displacement is:
 
-\[
+$$
 x(t)=
 x_0-
 \lambda
@@ -400,27 +400,27 @@ x_0-
 +\frac{\pi}{2}
 \right]
 \tag{4-19}
-\]
+$$
 
 for:
 
-\[
+$$
 t_0+t_1+t_2
 <
 t
 \leq
 t_0+t_1+t_2+t_w
-\]
+$$
 
 The duration of this stage is one quarter of the equivalent spring's oscillation period:
 
-\[
+$$
 t_w=\frac{T_w}{4}
 =
 \frac{\pi}{2}
 \sqrt{\frac{m_w}{k_w}}
 \tag{4-20}
-\]
+$$
 
 This stage represents the rapid downward movement of the wire tip and the attached droplet during wire rebound.
 
@@ -444,104 +444,104 @@ When the restoring force exceeds the surface-tension threshold, the equivalent o
 
 Based on the referenced theoretical work, the equivalent spring stiffness is given by:
 
-\[
+$$
 k_d=7.74+127961.29m_d
 \tag{4-21}
-\]
+$$
 
-where \(m_d\) is the droplet mass.
+where $$m_d$$ is the droplet mass.
 
 During the detachment stage, the droplet volume is assumed to remain approximately constant. The droplet diameter is taken to be twice the wire diameter:
 
-\[
+$$
 d_d=2d_w=0.0016\ \mathrm{m}
-\]
+$$
 
 The droplet is approximated as a sphere. Its mass is therefore:
 
-\[
+$$
 m_d=\rho_dV_d
-\]
+$$
 
 with:
 
-\[
+$$
 V_d=\frac{\pi d_d^3}{6}
-\]
+$$
 
 Hence:
 
-\[
+$$
 m_d=\rho_d\frac{\pi d_d^3}{6}
 \tag{4-22}
-\]
+$$
 
 #### 2.4.2 Determining the droplet oscillation amplitude
 
-The droplet enters this stage with an initial velocity \(v\). As it moves downwards, its kinetic energy and gravitational potential energy are converted into elastic potential energy in the equivalent spring.
+The droplet enters this stage with an initial velocity $$v$$. As it moves downwards, its kinetic energy and gravitational potential energy are converted into elastic potential energy in the equivalent spring.
 
 At the maximum displacement, the original model assumes that the droplet's kinetic energy and gravitational potential energy have both decreased to zero, while the elastic potential energy reaches its maximum.
 
 The energy balance is:
 
-\[
+$$
 E_k+m_dgh_d=E_p
-\]
+$$
 
 or:
 
-\[
+$$
 \frac{1}{2}m_dv^2
 +
 m_dgh_d
 =
 \frac{1}{2}k_dh_d^2
 \tag{4-23}
-\]
+$$
 
 where:
 
-- \(v\) is the initial droplet velocity at the beginning of the detachment stage;
-- \(h_d\) is the maximum downward displacement, corresponding to the oscillation amplitude;
-- \(g\) is gravitational acceleration.
+- $$v$$ is the initial droplet velocity at the beginning of the detachment stage;
+- $$h_d$$ is the maximum downward displacement, corresponding to the oscillation amplitude;
+- $$g$$ is gravitational acceleration.
 
-The initial velocity \(v\) is obtained by differentiating the wire-rebound displacement function in Equation (4-19). The original thesis estimates:
+The initial velocity $$v$$ is obtained by differentiating the wire-rebound displacement function in Equation (4-19). The original thesis estimates:
 
-\[
+$$
 v\approx0.38\ \mathrm{m/s}
-\]
+$$
 
 Substituting this value and the experimental parameters into Equation (4-23), the positive solution is:
 
-\[
+$$
 h_d=0.0015\ \mathrm{m}
-\]
+$$
 
 The original analysis then compares the restoring force with the surface-tension threshold.
 
 The restoring force at the maximum displacement is:
 
-\[
+$$
 F_r=k_dh_d
-\]
+$$
 
 The surface-tension threshold is represented by:
 
-\[
+$$
 F_t=1.2C_d
-\]
+$$
 
-where \(C_d\) is the circumference of the wire cross-section:
+where $$C_d$$ is the circumference of the wire cross-section:
 
-\[
+$$
 C_d=\pi d_d
-\]
+$$
 
 The original thesis concludes that:
 
-\[
+$$
 F_r>F_t
-\]
+$$
 
 Therefore, the droplet can overcome the surface-tension force and detach from the wire.
 
@@ -549,7 +549,7 @@ Therefore, the droplet can overcome the surface-tension force and detach from th
 
 The droplet displacement during this stage is modeled as:
 
-\[
+$$
 \begin{aligned}
 x(t)=\;&
 x_0-
@@ -565,27 +565,27 @@ h_d
 \right]
 \end{aligned}
 \tag{4-24}
-\]
+$$
 
 for:
 
-\[
+$$
 t_0+t_1+t_2+t_w
 <
 t
 \leq
 t_0+t_1+t_2+t_w+t_d
-\]
+$$
 
 The duration of the detachment stage is one quarter of the equivalent droplet oscillator's period:
 
-\[
+$$
 t_d=\frac{T_d}{4}
 =
 \frac{\pi}{2}
 \sqrt{\frac{m_d}{k_d}}
 \tag{4-25}
-\]
+$$
 
 After this stage, the droplet has separated from the wire and the transfer cycle is complete.
 
@@ -597,7 +597,7 @@ The first stage describes a stationary droplet. The second stage describes const
 
 Substituting the experimental parameters into the stage-specific equations gives the following model:
 
-\[
+$$
 x(t)=
 \begin{cases}
 x_0,
@@ -623,13 +623,13 @@ x_0+0.0015
 t_0+0.0441<t\leq t_0+0.0461
 \end{cases}
 \tag{4-26}
-\]
+$$
 
 The displacement is measured in metres and time in seconds.
 
-The parameters \(x_0\) and \(t_0\) are arbitrary alignment parameters. They determine the position and time at which the theoretical cycle begins.
+The parameters $$x_0$$ and $$t_0$$ are arbitrary alignment parameters. They determine the position and time at which the theoretical cycle begins.
 
-The theoretical displacement curve with \(x_0=t_0=0\) is illustrated in Figure 4-7.
+The theoretical displacement curve with $$x_0=t_0=0$$ is illustrated in Figure 4-7.
 
 ![Theoretical droplet displacement curve](figures/fig-4-7-theoretical-displacement-curve.png)
 
@@ -649,13 +649,13 @@ The horizontal axis represents time in seconds. The vertical axis represents the
 
 From the representative experimental curve, the original analysis selects the following alignment parameters:
 
-\[
+$$
 x_0=4.6\times10^{-3}\ \mathrm{m}
-\]
+$$
 
-\[
+$$
 t_0=0.094\ \mathrm{s}
-\]
+$$
 
 These values are substituted into Equation (4-26) to align the theoretical curve with the experimental trajectory.
 
