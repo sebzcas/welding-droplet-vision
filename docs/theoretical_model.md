@@ -569,10 +569,10 @@ $$
 The duration of the detachment stage is one quarter of the equivalent droplet oscillator's period:
 
 $$
-t_d=\frac{T_d}{4}
-=
-\frac{\pi}{2}
-\sqrt{\frac{m_d}{k_d}}
+\begin{aligned}
+t_d &= \frac{T_d}{4} \\
+    &= \frac{\pi}{2}\sqrt{\frac{m_d}{k_d}}
+\end{aligned}
 \qquad (4\text{-}25)
 $$
 
@@ -589,29 +589,17 @@ Substituting the experimental parameters into the stage-specific equations gives
 $$
 x(t)=
 \begin{cases}
-x_0,
-&
-t_0<t\leq t_0+0.02
-\\[5pt]
-x_0-0.05(t-t_0-0.02),
-&
-t_0+0.02<t\leq t_0+0.04
-\\[5pt]
-x_0-0.001
-\sin\left[
-380.6(t-t_0-0.04)+\frac{\pi}{2}
-\right],
-&
-t_0+0.04<t\leq t_0+0.0441
-\\[5pt]
-x_0+0.0015
-\sin\left[
-811.6(t-t_0-0.0441)
-\right],
-&
-t_0+0.0441<t\leq t_0+0.0461
+x_0, & t_0<t\leq t_0+0.02\\
+x_0-0.05(t-t_0-0.02), & t_0+0.02<t\leq t_0+0.04\\
+x_0-0.001\sin\left(380.6(t-t_0-0.04)+\frac{\pi}{2}\right),
+& t_0+0.04<t\leq t_0+0.0441\\
+x_0+0.0015\sin\left(811.6(t-t_0-0.0441)\right),
+& t_0+0.0441<t\leq t_0+0.0461
 \end{cases}
-\qquad (4\text{-}26)
+$$
+
+$$
+\text{(4-26)}
 $$
 
 The displacement is measured in metres and time in seconds.
