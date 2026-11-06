@@ -351,7 +351,7 @@ The mass of a wire segment is:
 
 $$
 m=\rho AL
-\tag{4-16}
+\qquad (4\text{-}16)
 $$
 
 where $$\rho$$ is the wire density, $$A$$ is the cross-sectional area and $$L$$ is the segment length.
