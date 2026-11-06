@@ -132,7 +132,16 @@ welding-droplet-vision/
 │   ├── dataset_specification.md
 │   ├── model_specification.md
 │   └── figures/
-│       └── theoretical_model_comparison.png
+│       ├── fig-4-1-physical-model.png
+│       ├── fig-4-2-compression-member-model.png
+│       ├── fig-4-3-wire-deflection-element.png
+│       ├── fig-4-4-deflection-coordinate-evolution.png
+│       ├── fig-4-5-equivalent-wire-spring.png
+│       ├── fig-4-6-droplet-detachment.png
+│       ├── fig-4-6-droplet-equivalent-model.png
+│       ├── fig-4-7-theoretical-displacement-curve.png
+│       ├── fig-4-8-experimental-displacement-curve.png
+│       └── fig-4-9-theoretical-experimental-comparison.png
 ├── data/
 │   ├── README.md
 │   ├── metadata/

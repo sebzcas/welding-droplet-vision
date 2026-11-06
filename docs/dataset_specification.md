@@ -209,7 +209,7 @@ The original research used the experimentally detected droplet-bottom displaceme
 
 The theoretical model describes the displacement over one complete droplet-transfer cycle. Its initial time and displacement can be adjusted to align it with a selected experimental cycle.
 
-The historical theoretical-to-experimental comparison is documented in [Original Research Pipeline](original_pipeline.md#6-theoretical-model-and-experimental-comparison) and illustrated in [`docs/figures/theoretical_model_comparison.png`](figures/theoretical_model_comparison.png).
+The historical theoretical-to-experimental comparison is documented in [Original Research Pipeline](original_pipeline.md#6-theoretical-model-and-experimental-comparison) and illustrated in [`docs/figures/fig-4-9-theoretical-experimental-comparison.png`](figures/fig-4-9-theoretical-experimental-comparison.png).
 
 The original approximately 90% agreement refers to the representative historical comparison. It should not be interpreted as a newly measured metric for every reconstructed video or for all boundary targets.
 

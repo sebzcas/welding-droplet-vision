@@ -364,7 +364,7 @@ The original research reported approximately 90% overall agreement. It also disc
 
 The historical comparison figure is referenced in:
 
-[`docs/figures/theoretical_model_comparison.png`](figures/theoretical_model_comparison.png)
+[`docs/figures/fig-4-9-theoretical-experimental-comparison.png`](figures/fig-4-9-theoretical-experimental-comparison.png)
 
 **Scope of the comparison:** The original theoretical comparison used a CNN-derived droplet-bottom trajectory. It did not independently validate all five CNN regression targets or all traditional-vision boundary curves against the theoretical model.
 
