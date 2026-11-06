@@ -101,9 +101,11 @@ The following examples show the reconstructed detection outputs for video `20`.
 
 Representative boundary displacement curves:
 
-| Upper-left                                                        | Upper-right                                                         | Bottom                                                    |
-|-------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
-| ![Upper-left](data/results/deep-learning/20/plots/upper_left.png) | ![Upper-right](data/results/deep-learning/20/plots/upper_right.png) | ![Bottom](data/results/deep-learning/20/plots/bottom.png) |
+| Boundary    | Plot                                                                |
+|-------------|---------------------------------------------------------------------|
+| Upper-left  | ![Upper-left](data/results/deep-learning/20/plots/upper_left.png)   |
+| Upper-right | ![Upper-right](data/results/deep-learning/20/plots/upper_right.png) |
+| Bottom      | ![Bottom](data/results/deep-learning/20/plots/bottom.png)           |
 
 ### Traditional-vision detection
 
