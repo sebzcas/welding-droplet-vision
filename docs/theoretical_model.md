@@ -588,14 +588,21 @@ Substituting the experimental parameters into the stage-specific equations gives
 
 $$
 x(t)=
-\begin{cases}
-x_0, & t_0<t\leq t_0+0.02\\
-x_0-0.05(t-t_0-0.02), & t_0+0.02<t\leq t_0+0.04\\
+\left\{
+\begin{array}{ll}
+x_0,
+& t_0<t\leq t_0+0.02
+\\
+x_0-0.05(t-t_0-0.02),
+& t_0+0.02<t\leq t_0+0.04
+\\
 x_0-0.001\sin\left(380.6(t-t_0-0.04)+\frac{\pi}{2}\right),
-& t_0+0.04<t\leq t_0+0.0441\\
+& t_0+0.04<t\leq t_0+0.0441
+\\
 x_0+0.0015\sin\left(811.6(t-t_0-0.0441)\right),
 & t_0+0.0441<t\leq t_0+0.0461
-\end{cases}
+\end{array}
+\right.
 $$
 
 $$
