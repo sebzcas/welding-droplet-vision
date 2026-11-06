@@ -434,10 +434,7 @@ When the restoring force exceeds the surface-tension threshold, the equivalent o
 
 Based on the referenced theoretical work, the equivalent spring stiffness is given by:
 
-$$
-k_d=7.74+127961.29m_d
-\tag{4-21}
-$$
+$$k_d=7.74+127961.29m_d \tag{4-21} $$
 
 where $$m_d$$ is the droplet mass.
 
