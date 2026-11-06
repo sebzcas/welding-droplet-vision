@@ -277,11 +277,7 @@ $$
 
 The detachment displacement amplitude $$h_d$$ is derived from the energy relationship:
 
-$$
-\frac{1}{2}m_dv^2+m_dgh_d
-=
-\frac{1}{2}k_dh_d^2
-$$
+$$ \frac{1}{2}m_dv^2+m_dgh_d=\frac{1}{2}k_dh_d^2 $$
 
 The original analysis obtained an approximate initial velocity of $$0.38\ \mathrm{m/s}$$ for this stage and a displacement amplitude of:
 
@@ -318,23 +314,14 @@ The four stage-specific expressions are combined into one piecewise displacement
 
 After substituting the experimental parameters from the original analysis, the theoretical displacement becomes:
 
-$$
-x(t)=
-\begin{cases}
-x_0,
-& t_0<t\leq t_0+0.02\\[4pt]
-x_0-0.05(t-t_0-0.02),
-& t_0+0.02<t\leq t_0+0.04\\[4pt]
-x_0-0.001\sin\left(
-380.6(t-t_0-0.04)+\frac{\pi}{2}
-\right),
-& t_0+0.04<t\leq t_0+0.0441\\[4pt]
-x_0+0.0015\sin\left(
-811.6(t-t_0-0.0441)
-\right),
-& t_0+0.0441<t\leq t_0+0.0461
-\end{cases}
-$$
+The theoretical droplet displacement is described by the following piecewise function:
+
+| Stage               | Displacement                                          | Time interval                 |
+|---------------------|-------------------------------------------------------|-------------------------------|
+| Droplet dwelling    | $x(t)=x_0$                                            | $t_0<t\leq t_0+0.02$          |
+| Wire energy storage | $x(t)=x_0-0.05(t-t_0-0.02)$                           | $t_0+0.02<t\leq t_0+0.04$     |
+| Wire rebound        | $x(t)=x_0-0.001\sin(380.6(t-t_0-0.04)+\frac{\pi}{2})$ | $t_0+0.04<t\leq t_0+0.0441$   |
+| Droplet detachment  | $x(t)=x_0+0.0015\sin(811.6(t-t_0-0.0441))$            | $t_0+0.0441<t\leq t_0+0.0461$ |
 
 The displacement is expressed in metres and time in seconds.
 
