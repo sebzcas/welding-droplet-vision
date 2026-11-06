@@ -586,28 +586,16 @@ The first stage describes a stationary droplet. The second stage describes const
 
 Substituting the experimental parameters into the stage-specific equations gives the following model:
 
-$$
-x(t)=
-\left\{
-\begin{array}{ll}
-x_0,
-& t_0<t\leq t_0+0.02
-\\
-x_0-0.05(t-t_0-0.02),
-& t_0+0.02<t\leq t_0+0.04
-\\
-x_0-0.001\sin\left(380.6(t-t_0-0.04)+\frac{\pi}{2}\right),
-& t_0+0.04<t\leq t_0+0.0441
-\\
-x_0+0.0015\sin\left(811.6(t-t_0-0.0441)\right),
-& t_0+0.0441<t\leq t_0+0.0461
-\end{array}
-\right.
-$$
+The theoretical droplet displacement is defined piecewise as follows:
 
-$$
-\text{(4-26)}
-$$
+| Stage               | Displacement equation                                 | Time interval                 |
+|---------------------|-------------------------------------------------------|-------------------------------|
+| Droplet dwelling    | $x(t)=x_0$                                            | $t_0<t\leq t_0+0.02$          |
+| Wire energy storage | $x(t)=x_0-0.05(t-t_0-0.02)$                           | $t_0+0.02<t\leq t_0+0.04$     |
+| Wire rebound        | $x(t)=x_0-0.001\sin(380.6(t-t_0-0.04)+\frac{\pi}{2})$ | $t_0+0.04<t\leq t_0+0.0441$   |
+| Droplet detachment  | $x(t)=x_0+0.0015\sin(811.6(t-t_0-0.0441))$            | $t_0+0.0441<t\leq t_0+0.0461$ |
+
+**Equation (4-26).** Piecewise theoretical droplet displacement model.
 
 The displacement is measured in metres and time in seconds.
 
