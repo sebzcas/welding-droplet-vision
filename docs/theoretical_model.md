@@ -61,7 +61,7 @@ During the dwelling stage, the wire is continuously fed towards the arc and melt
 
 $$
 v_m=v_f
-\tag{4-1}
+\qquad (4\text{-}1)
 $$
 
 Using the experimental parameters:
@@ -82,7 +82,7 @@ The displacement function is:
 
 $$
 x(t)=x_0
-\tag{4-2}
+\qquad (4\text{-}2)
 $$
 
 where:
@@ -109,7 +109,7 @@ The droplet displacement is therefore:
 
 $$
 x(t)=x_0-v_m(t-t_0-t_1)
-\tag{4-3}
+\qquad (4\text{-}3)
 $$
 
 for:
@@ -132,7 +132,7 @@ After a clamping duration $$t_f$$, the endpoint has moved from $$A$$ to $$B$$. D
 
 $$
 \lambda=v_f t_f
-\tag{4-4}
+\qquad (4\text{-}4)
 $$
 
 For the experimental parameters:
@@ -149,7 +149,7 @@ Considering axial deformation of the compression member, the original thesis ado
 
 $$
 w(x)=A\sin(kx)
-\tag{4-5}
+\qquad (4\text{-}5)
 $$
 
 where:
@@ -170,7 +170,7 @@ Differentiating Equation (4-5) gives:
 
 $$
 \frac{dw}{dx}=Ak\cos(kx)
-\tag{4-6}
+\qquad (4\text{-}6)
 $$
 
 To determine the amplitude $$A$$, consider a small element of the deflected wire, as illustrated in Figure 4-3.
@@ -181,7 +181,7 @@ Let $$ds$$ denote the length of an infinitesimal element along the deflection cu
 
 $$
 \lambda=\int_0^{L_0-\lambda}(ds-dx)
-\tag{4-7}
+\qquad (4\text{-}7)
 $$
 
 From the geometry of the infinitesimal element:
@@ -211,7 +211,7 @@ ds\approx
 1+\frac{1}{2}
 \left(\frac{dw}{dx}\right)^2
 \right]dx
-\tag{4-8}
+\qquad (4\text{-}8)
 $$
 
 Substituting Equation (4-6) into Equation (4-8), and then substituting the resulting expression into Equation (4-7), yields the following relation:
@@ -225,7 +225,7 @@ $$
 \sin(2kL_0)-\sin(2kv_ft_f)
 \right)
 \right]
-\tag{4-9}
+\qquad (4\text{-}9)
 $$
 
 Since $$\lambda=v_ft_f$$, solving for the amplitude gives:
@@ -241,7 +241,7 @@ A=
 \right]
 }
 }
-\tag{4-10}
+\qquad (4\text{-}10)
 $$
 
 This provides the deflection amplitude in terms of the wire feeding velocity, clamping duration, wire length and the parameter $$k$$.
@@ -262,7 +262,7 @@ The original analysis assumes that the ratio between the position of a point on 
 
 $$
 \frac{|x|}{L_0-v_ft_f} = \frac{|x|'}{L_0-v_ft_f-v_fdt}
-\tag{4-11}
+\qquad (4\text{-}11)
 $$
 
 Defining:
@@ -275,7 +275,7 @@ the thesis obtains:
 
 $$
 \frac{d|x|}{dt} = \frac{|x|v_f}{L_0-v_ft_f}
-\tag{4-12}
+\qquad (4\text{-}12)
 $$
 
 The printed form of Equation (4-13) is:
@@ -283,7 +283,7 @@ The printed form of Equation (4-13) is:
 $$
 |x|=
 \frac{Cv_f}{L_0-v_ft_f}
-\tag{4-13}
+\qquad (4\text{-}13)
 $$
 
 where $$C$$ is a constant.
@@ -298,7 +298,7 @@ Using the boundary condition that $$w=0$$ when $$t=0$$ and $$x=L_0$$, the thesis
 
 $$
 C=\frac{\pi}{kv_f}
-\tag{4-14}
+\qquad (4\text{-}14)
 $$
 
 Finally, substituting Equations (4-10) and (4-14) into the deflection function gives the time-dependent wire deflection expression:
@@ -319,7 +319,7 @@ w(x)=
 \frac{\pi x}{L_0-v_ft_f}
 \right)
 }
-\tag{4-15}
+\qquad (4\text{-}15)
 $$
 
 where:
@@ -370,14 +370,14 @@ The equivalent mass of a uniformly distributed spring is one-third of its total 
 
 $$
 m_w=\frac{1}{3}m_0+m_r
-\tag{4-17}
+\qquad (4\text{-}17)
 $$
 
 The equivalent spring stiffness is:
 
 $$
 k_w=\frac{3EI}{L_0^3}
-\tag{4-18}
+\qquad (4\text{-}18)
 $$
 
 During the energy-storage stage, the wire endpoint moves by $$\lambda$$. When the wire rebounds to its original straight configuration, the endpoint approximately returns through the same displacement. Thus, the rebound amplitude is taken as $$\lambda$$.
@@ -395,7 +395,7 @@ x_0-
 (t-t_0-t_1-t_2)
 +\frac{\pi}{2}
 \right]
-\tag{4-19}
+\qquad (4\text{-}19)
 $$
 
 for:
@@ -410,7 +410,10 @@ $$
 
 The duration of this stage is one quarter of the equivalent spring's oscillation period:
 
-$$t_w=\frac{T_w}{4}=\frac{\pi}{2} \sqrt{\frac{m_w}{k_w}} \tag{4-20} $$
+$$
+t_w=\frac{T_w}{4}=\frac{\pi}{2} \sqrt{\frac{m_w}{k_w}}
+\qquad (4\text{-}20)
+$$
 
 This stage represents the rapid downward movement of the wire tip and the attached droplet during wire rebound.
 
@@ -434,7 +437,10 @@ When the restoring force exceeds the surface-tension threshold, the equivalent o
 
 Based on the referenced theoretical work, the equivalent spring stiffness is given by:
 
-$$k_d=7.74+127961.29m_d \tag{4-21} $$
+$$
+k_d=7.74+127961.29m_d
+\qquad (4\text{-}21)
+$$
 
 where $$m_d$$ is the droplet mass.
 
@@ -460,7 +466,7 @@ Hence:
 
 $$
 m_d=\rho_d\frac{\pi d_d^3}{6}
-\tag{4-22}
+\qquad (4\text{-}22)
 $$
 
 #### 2.4.2 Determining the droplet oscillation amplitude
@@ -477,7 +483,10 @@ $$
 
 or:
 
-$$\frac{1}{2}m_dv^2 + m_dgh_d = \frac{1}{2}k_dh_d^2 \tag{4-23} $$
+$$
+\frac{1}{2}m_dv^2 + m_dgh_d = \frac{1}{2}k_dh_d^2
+\qquad (4\text{-}23)
+$$
 
 where:
 
@@ -544,7 +553,7 @@ h_d
 (t-t_0-t_1-t_2-t_w)
 \right]
 \end{aligned}
-\tag{4-24}
+\qquad (4\text{-}24)
 $$
 
 for:
@@ -564,7 +573,7 @@ t_d=\frac{T_d}{4}
 =
 \frac{\pi}{2}
 \sqrt{\frac{m_d}{k_d}}
-\tag{4-25}
+\qquad (4\text{-}25)
 $$
 
 After this stage, the droplet has separated from the wire and the transfer cycle is complete.
@@ -602,7 +611,7 @@ x_0+0.0015
 &
 t_0+0.0441<t\leq t_0+0.0461
 \end{cases}
-\tag{4-26}
+\qquad (4\text{-}26)
 $$
 
 The displacement is measured in metres and time in seconds.
