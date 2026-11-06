@@ -594,9 +594,11 @@ The theoretical droplet displacement is defined piecewise as follows:
 | Wire energy storage | $x(t)=x_0-0.05(t-t_0-0.02)$                           | $t_0+0.02<t\leq t_0+0.04$     |
 | Wire rebound        | $x(t)=x_0-0.001\sin(380.6(t-t_0-0.04)+\frac{\pi}{2})$ | $t_0+0.04<t\leq t_0+0.0441$   |
 | Droplet detachment  | $x(t)=x_0+0.0015\sin(811.6(t-t_0-0.0441))$            | $t_0+0.0441<t\leq t_0+0.0461$ |
+
 $$
 \text{(4-26)}
 $$
+
 **Equation (4-26).** Piecewise theoretical droplet displacement model.
 
 The displacement is measured in metres and time in seconds.

@@ -172,17 +172,17 @@ The theoretical analysis describes one complete droplet-transfer cycle as four s
 
 **Stage 1: Droplet dwelling**
 
-The wire melting speed \(v_m\) is equal to the wire feeding speed \(v_f\):
+The wire melting speed $$v_m$$ is equal to the wire feeding speed $$v_f$$:
 
-\[
+$$
 v_m=v_f
-\]
+$$
 
-The droplet remains at an approximately constant position. If its initial displacement is \(x_0\), then:
+The droplet remains at an approximately constant position. If its initial displacement is $$x_0$$, then:
 
-\[
+$$
 x(t)=x_0
-\]
+$$
 
 **Stage 2: Wire energy storage**
 
@@ -190,31 +190,31 @@ The piezoelectric actuator clamps the wire tip. The wire tip stops advancing whi
 
 The wire feeding displacement during the clamping period is:
 
-\[
+$$
 \lambda=v_f t_f
-\]
+$$
 
-where \(t_f\) is the clamping duration.
+where $$t_f$$ is the clamping duration.
 
 During this stage, the droplet continues moving upward due to wire melting:
 
-\[
+$$
 x(t)=x_0-v_m(t-t_0-t_1)
-\]
+$$
 
 The bent wire is further analysed using an equivalent compressed-rod model. Its deflection is represented by:
 
-\[
+$$
 w=A\sin(kx)
-\]
+$$
 
 where:
 
-\[
+$$
 k=\sqrt{\frac{F}{EI}}
-\]
+$$
 
-Here, \(F\) is the equivalent axial force, \(E\) is Young's modulus, and \(I\) is the cross-sectional second moment of area.
+Here, $$F$$ is the equivalent axial force, $$E$$ is Young's modulus, and $$I$$ is the cross-sectional second moment of area.
 
 The analysis derives the deflection amplitude from the wire feeding displacement and the arc-shaped wire geometry. The resulting expression describes the wire's deflection during the energy-storage stage.
 
@@ -226,33 +226,33 @@ The deformed wire is approximated as an equivalent spring-mass system.
 
 The equivalent vibrating mass is:
 
-\[
+$$
 m_w=\frac{1}{3}m_0+m_r
-\]
+$$
 
-where \(m_0\) and \(m_r\) are the masses of the equivalent spring section and the remaining wire section, respectively.
+where $$m_0$$ and $$m_r$$ are the masses of the equivalent spring section and the remaining wire section, respectively.
 
 The equivalent spring stiffness is:
 
-\[
+$$
 k_w=\frac{3EI}{L_0^3}
-\]
+$$
 
 The wire rebound is modelled as a quarter-cycle simple harmonic motion. The corresponding droplet displacement is:
 
-\[
+$$
 x(t)=x_0-\lambda
 \sin\left(
 \sqrt{\frac{k_w}{m_w}}
 (t-t_0-t_1-t_2)+\frac{\pi}{2}
 \right)
-\]
+$$
 
 The duration of this stage is:
 
-\[
+$$
 t_w=\frac{\pi}{2}\sqrt{\frac{m_w}{k_w}}
-\]
+$$
 
 ### 5.3 Droplet Detachment
 
@@ -262,36 +262,36 @@ The droplet's connection to the wire becomes progressively smaller until the dro
 
 The droplet is approximated as an equivalent spring-mass system with stiffness:
 
-\[
+$$
 k_d=7.74+127961.29m_d
-\]
+$$
 
-where \(m_d\) is the droplet mass.
+where $$m_d$$ is the droplet mass.
 
 The droplet mass is estimated by treating the droplet as a sphere:
 
-\[
+$$
 m_d=\rho_d V_d
 =\rho_d\frac{\pi d_d^3}{6}
-\]
+$$
 
-The detachment displacement amplitude \(h_d\) is derived from the energy relationship:
+The detachment displacement amplitude $$h_d$$ is derived from the energy relationship:
 
-\[
+$$
 \frac{1}{2}m_dv^2+m_dgh_d
 =
 \frac{1}{2}k_dh_d^2
-\]
+$$
 
-The original analysis obtained an approximate initial velocity of \(0.38\ \mathrm{m/s}\) for this stage and a displacement amplitude of:
+The original analysis obtained an approximate initial velocity of $$0.38\ \mathrm{m/s}$$ for this stage and a displacement amplitude of:
 
-\[
+$$
 h_d=0.0015\ \mathrm{m}
-\]
+$$
 
 The resulting droplet-detachment displacement is:
 
-\[
+$$
 \begin{aligned}
 x(t)={}&x_0-\lambda
 \sin\left(
@@ -302,13 +302,13 @@ x(t)={}&x_0-\lambda
 (t-t_0-t_1-t_2-t_w)
 \right)
 \end{aligned}
-\]
+$$
 
 The duration of this stage is:
 
-\[
+$$
 t_d=\frac{\pi}{2}\sqrt{\frac{m_d}{k_d}}
-\]
+$$
 
 The model treats detachment as the end of the corresponding transfer cycle.
 
@@ -318,7 +318,7 @@ The four stage-specific expressions are combined into one piecewise displacement
 
 After substituting the experimental parameters from the original analysis, the theoretical displacement becomes:
 
-\[
+$$
 x(t)=
 \begin{cases}
 x_0,
@@ -334,11 +334,11 @@ x_0+0.0015\sin\left(
 \right),
 & t_0+0.0441<t\leq t_0+0.0461
 \end{cases}
-\]
+$$
 
 The displacement is expressed in metres and time in seconds.
 
-The parameters \(x_0\) and \(t_0\) define the initial displacement and time. They can be adjusted to align the theoretical curve with a selected experimental transfer cycle.
+The parameters $$x_0$$ and $$t_0$$ define the initial displacement and time. They can be adjusted to align the theoretical curve with a selected experimental transfer cycle.
 
 ### 5.5 Model Interpretation
 
@@ -363,13 +363,13 @@ The comparison procedure was:
 
 For the representative comparison, the original analysis selected:
 
-\[
+$$
 x_0=4.6\times10^{-3}\ \mathrm{m}
-\]
+$$
 
-\[
+$$
 t_0=0.094\ \mathrm{s}
-\]
+$$
 
 The resulting theoretical curve was compared with the experimentally detected droplet-bottom trajectory.
 
